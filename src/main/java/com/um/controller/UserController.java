@@ -65,7 +65,7 @@ public class UserController {
 			throws InvalidKeySpecException, NoSuchAlgorithmException {
 		UserDto response = userService.loginUser(userDto);
 		if (response == null) {
-			return new ResponseEntity<>("Either username or password is wrong", HttpStatus.UNAUTHORIZED);
+			return new ResponseEntity<>("Either username or password is wrong!", HttpStatus.UNAUTHORIZED);
 		}
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
