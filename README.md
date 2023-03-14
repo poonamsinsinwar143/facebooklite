@@ -1,10 +1,8 @@
-1. Get Comment
-This api gives the comments of a particular post.
+Facebooklite
+This is a REST API based social media application with features like signin/signup, post, comment, likes, add/remove friends etc.
+Tech stack: springboot 2.7.8, java 11, mysql 8.
 
-
-curl --location 'http://localhost:8080/rest/v1/user/2/post/1/comment' \
---header 'auth-token: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjIsInN1YiI6InVzZXItbWFuYWdlbWVudC1zZWN1cml0eSIsImp0aSI6Ijc2MmI0MjBjLTVkMzAtNDUyMC04Y2FhLTdkOWM4ODUxOWVkNSIsImlhdCI6MTY3NTAyMTExMiwiZXhwIjoxNjc1MDI0NzEyfQ.nDe2qsaRFJNUS4efhfTAZk6aop2XL2CK5qDQDtDLcGs'
-
+The application provides below REST APIs:
 
 2. Create User
 This api is used to create new user.
