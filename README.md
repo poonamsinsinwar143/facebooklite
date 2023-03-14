@@ -1,10 +1,9 @@
-Facebooklite
 This is a REST API based social media application with features like signin/signup, post, comment, likes, add/remove friends etc.
 Tech stack: springboot 2.7.8, java 11, mysql 8.
 
 The application provides below REST APIs:
 
-2. Create User
+1. Create User
 This api is used to create new user.
 
 
@@ -21,7 +20,7 @@ curl --location 'http://localhost:8080/rest/v1/user' \
 }'
 
 
-3.Update User
+2. Update User
 This api is used to update details of user.
 
 
@@ -33,7 +32,7 @@ curl --location --request PUT 'http://localhost:8080/rest/v1/user/1' \
 }'
 
 
-4.Login User
+3. Login User
 This api is used to login.
 
 
@@ -45,14 +44,14 @@ curl --location 'http://localhost:8080/rest/v1/user/login' \
 }'
 
 
-5.Delete User
+4. Delete User
 This api is used to delete a particular user.
 
 
 curl --location --request DELETE 'http://localhost:8080/rest/v1/user/3'
 
 
-6.Logout User
+5. Logout User
 This api is used to logout a user.
 
 
@@ -60,7 +59,7 @@ curl --location 'http://localhost:8080/rest/v1/user/2/logout' \
 --header 'auth-token: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjIsInN1YiI6InVzZXItbWFuYWdlbWVudC1zZWN1cml0eSIsImp0aSI6IjRiNDFhYWZiLTE3MjQtNDk5ZC1hOTI5LWI4OTczNTU4MzQwZiIsImlhdCI6MTY3NTAyMDM0NCwiZXhwIjoxNjc1MDIzOTQ0fQ.V5gpnUZ9V9vS-4nLZ7YRUpbK4q1XoDc8nswJ7FuunRM'
 
 
-7.Create Post
+6. Create Post
 This api is used to create post of an user.
 
 
@@ -71,7 +70,7 @@ curl --location 'http://localhost:8080/rest/v1/user/4/post' \
 }'
 
 
-8.Update Post
+7. Update Post
 This api is used to update details of a particular post of an user.
 
 
@@ -82,14 +81,14 @@ curl --location --request PUT 'http://localhost:8080/rest/v1/user/1/post/2' \
 }'
 
 
-9.Get Post
+8. Get Post
 This api is used to get particular post of an user.
 
 
 curl --location 'http://localhost:8080/rest/v1/user/4/post/1'
 
 
-10.Delete Post
+9. Delete Post
 This api is used to delete a particular post of an user.
 
 
@@ -97,7 +96,7 @@ curl --location --request DELETE 'http://localhost:8080/rest/v1/user/2/post/3'
 
 
 
-11.Get All Post
+10. Get All Post
 This api is used to get all post of an user.
 
 
@@ -106,7 +105,7 @@ curl --location 'http://localhost:8080/rest/v1/user/4/post' \
 
 
 
-12.Create Comment
+11. Create Comment
 This api is used to create comment on a post of an User.
 
 
@@ -118,7 +117,7 @@ curl --location 'http://localhost:8080/rest/v1/user/2/post/1/comment' \
 }'
 
 
-13.Get Comment
+12. Get Comment
 This api is used to get all the comments on a particular post of an user.
 
 
@@ -126,7 +125,7 @@ curl --location 'http://localhost:8080/rest/v1/user/2/post/1/comment' \
 --header 'auth-token: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjIsInN1YiI6InVzZXItbWFuYWdlbWVudC1zZWN1cml0eSIsImp0aSI6Ijc2MmI0MjBjLTVkMzAtNDUyMC04Y2FhLTdkOWM4ODUxOWVkNSIsImlhdCI6MTY3NTAyMTExMiwiZXhwIjoxNjc1MDI0NzEyfQ.nDe2qsaRFJNUS4efhfTAZk6aop2XL2CK5qDQDtDLcGs'
 
 
-14.Delete Comment
+13. Delete Comment
 This api is used to delete a particular comment from a post of an user.
 
 
@@ -134,7 +133,7 @@ curl --location --request DELETE 'http://localhost:8080/rest/v1/user/2/post/1/co
 
 
 
-15.Update Comment
+14. Update Comment
 This api is used to update a particular comment on a post of an user.
 
 
@@ -145,7 +144,7 @@ curl --location --request PUT 'http://localhost:8080/rest/v1/user/2/post/1/comme
 }'
 
 
-16.Create Like
+15. Create Like
 This api is used to create like on a post of an user.
 
 
@@ -158,21 +157,21 @@ curl --location 'http://localhost:8080/rest/v1/user/2/post/1/like' \
 }'
 
 
-17.Delete Like
+16. Delete Like
 This api is used to delete a particular like on a post of an user.
 
 
 curl --location --request DELETE 'http://localhost:8080/rest/v1/user/2/post/1/like/1'
 
 
-18.Get Likes
+17. Get Likes
 This api is used to get all the likes on a post of an user.
 
 
 curl --location 'http://localhost:8080/rest/v1/user/2/post/1/like'
 
 
-19.Add Friend
+18. Add Friend
 This api is used to add a friend.
 
 
@@ -183,14 +182,14 @@ curl --location 'http://localhost:8080/rest/v1/user/5/friend' \
 }'
 
 
-20.Get Friend
+19. Get Friend
 This api is used to get all the friends of an user.
 
 
 curl --location 'http://localhost:8080/rest/v1/user/2/friend'
 
 
-21.Change Password
+20. Change Password
 This api is used to change password of an user.
 
 
